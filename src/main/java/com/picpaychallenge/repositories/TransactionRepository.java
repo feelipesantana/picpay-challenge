@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import com.picpaychallenge.domain.transaction.Transaction;
 
 @Repository
-public interface TransationRepository extends JpaRepository<Transaction, Long> {
+public interface TransactionRepository extends JpaRepository<Transaction, Long> {
     
 }
