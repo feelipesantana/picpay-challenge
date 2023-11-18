@@ -2,6 +2,6 @@ package com.picpaychallenge.dtos;
 
 import java.math.BigDecimal;
 
-public record TransactionDTO(BigDecimal value, Long senderId, long receiveId) {
+public record TransactionDTO(BigDecimal value, Long senderId, long receiverId) {
   
 }
