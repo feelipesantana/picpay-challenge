@@ -1,8 +1,6 @@
-package com.picpaychallenge.user;
+package com.picpaychallenge.domain.user;
 
 import java.math.BigDecimal;
-
-import org.hibernate.usertype.UserType;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -20,7 +18,7 @@ import lombok.Setter;
 public class User {
   
   @Id
-  @GeneratedValue(strategy=GenerationType.UUID)
+  @GeneratedValue(strategy=GenerationType.IDENTITY)
   private long id;
 
   private String firstName;

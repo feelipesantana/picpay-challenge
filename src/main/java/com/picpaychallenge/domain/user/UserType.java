@@ -1,4 +1,4 @@
-package com.picpaychallenge.user;
+package com.picpaychallenge.domain.user;
 
 public enum UserType {
   CLIENT,

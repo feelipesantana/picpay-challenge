@@ -1,9 +1,9 @@
-package com.picpaychallenge.transaction;
+package com.picpaychallenge.domain.transaction;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import com.picpaychallenge.user.User;
+import com.picpaychallenge.domain.user.User;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -15,6 +15,7 @@ import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity(name="transactions")
@@ -23,10 +24,11 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @EqualsAndHashCode(of="id")
+@NoArgsConstructor
 
 public class Transaction {
   @Id
-  @GeneratedValue(strategy = GenerationType.UUID)
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   private BigDecimal amount;
   
